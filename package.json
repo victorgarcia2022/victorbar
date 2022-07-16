@@ -1,0 +1,37 @@
+{
+  "name": "barvictor",
+  "version": "1.0.0",
+  "description": "Sistema de Administración de pedidos",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "dev": "nodemon src --exec babel-node",
+    "start": "node dist"
+  },
+  "author": "Victor",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/runtime": "^7.18.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.6",
+    "sequelize-cli": "^6.4.1"
+  }
+}

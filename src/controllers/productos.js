@@ -38,7 +38,7 @@ export const createProducto = async(req, res, next) => {
           valor:             req.body.valor,
           imagen:            req.body.imagen,
           stock:             req.body.stock,
-          sedeId:            req.body.sedeId,
+          sede_id:            req.body.sede_id,
 					created_at:        moment(new Date()).utcOffset("-05:00").format("YYYY-MM-DD hh:mm:ss"),
 					updated_at:        moment(new Date()).utcOffset("-05:00").format("YYYY-MM-DD hh:mm:ss"),
 				},
@@ -72,7 +72,7 @@ export const updateProducto = async(req, res, next) => {
           valor:             req.body.valor,
           imagen:            req.body.imagen,
           stock:            req.body.stock,
-          sedeId:            req.body.sedeId,
+          sede_id:            req.body.sede_id,
           updated_at:        moment(new Date()).utcOffset("-05:00").format("YYYY-MM-DD hh:mm:ss"),
 				},
 				{ 

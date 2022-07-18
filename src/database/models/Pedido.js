@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     mesa: DataTypes.INTEGER,
     productos: DataTypes.JSON,
     total: DataTypes.STRING,
-    usuarioId: {
+    usuario_id: {
       type: DataTypes.INTEGER,
       references: {
         model: {
@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       allowNull: false
     },
-    sedeId: {
+    sede_id: {
       type: DataTypes.INTEGER,
       references: {
         model: {

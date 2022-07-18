@@ -18,7 +18,7 @@ router.get('/:id', [
 
 router.post('/', [
   body('mesa',"Debe Ingresar Un N° de mesa Mesa.").notEmpty().escape().trim().isInt(),
-  body('productos',"Debe Ingresar el Total del pedido.").notEmpty().isJSON(),
+  body('productos',"Debe Ingresar los productos.").notEmpty().isJSON(),
   body('total',"Debe Ingresar el Total del pedido.").notEmpty().escape().trim().isLength({ min: 3 }),
   body('usuario_id',"Debe Ingresar Un Usuario Válido.").notEmpty().escape().trim().isInt(),
   body('sede_id',"Debe Ingresar Una Sede Válida.").notEmpty().escape().trim().isInt(),

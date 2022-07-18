@@ -1,4 +1,4 @@
-@api = http://localhost:5000/api/usuarios
+@api = http://localhost:5000/api/productos
 
 ### GET ALL
 GET {{api}}/
@@ -8,20 +8,26 @@ POST {{api}}/
 Content-Type: application/json
 
 {
-    "email":"administrador12@correo.com",
-    "password": "Qaws12pj-22"
+  "nombre":"Ron 15 años",
+  "valor": 110000,
+  "imagen":"https://i0.wp.com/www.licoresmedellin.com/wp-content/uploads/2022/06/Mezcal-Union-Kit-VIEJO-700ml.jpg?fit=600%2C800&ssl=1",
+  "stock":20,
+  "sede_id":1
 }
 
 ### GET BY ID
 GET {{api}}/5
 
 ### UPDATE BY ID
-PATCH {{api}}/1
+PATCH {{api}}/2
 Content-Type: application/json
 
 {
-    "email":"admin@correo.com",
-    "password": "Qaws12pj-22"
+  "nombre":"Ron Actualizado 20 años",
+  "valor": 110000,
+  "imagen":"´https://i0.wp.com/www.licoresmedellin.com/wp-content/uploads/2022/06/Mezcal-Union-Kit-VIEJO-700ml.jpg?fit=600%2C800&ssl=1´",
+  "stock":20,
+  "sede_id":1
 }
 
 ### DELETE BY ID

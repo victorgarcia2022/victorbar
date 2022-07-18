@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     valor: DataTypes.STRING,
     imagen: DataTypes.STRING,
     stock: DataTypes.INTEGER,
-    sedeId: {
+    sede_id: {
       type: DataTypes.INTEGER,
       references: {
         model: {

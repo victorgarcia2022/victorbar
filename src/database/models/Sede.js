@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     nombre: DataTypes.STRING,
     administrador: DataTypes.STRING,
     n_mesas: DataTypes.INTEGER,
-    usuarioId: {
+    usuario_id: {
       type: DataTypes.INTEGER,
       references: {
         model: {

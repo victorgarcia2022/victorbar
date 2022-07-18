@@ -37,7 +37,7 @@ export const createSede = async(req, res, next) => {
 				nombre:            req.body.nombre,
 				administrador:     req.body.administrador,
 				n_mesas:           req.body.n_mesas,
-				usuarioId:         req.body.usuarioId,
+				usuario_id:         req.body.usuario_id,
 				created_at:        moment(new Date()).utcOffset("-05:00").format("YYYY-MM-DD hh:mm:ss"),
 				updated_at:        moment(new Date()).utcOffset("-05:00").format("YYYY-MM-DD hh:mm:ss"),
 			},
@@ -70,7 +70,7 @@ export const updateSede = async(req, res, next) => {
           nombre:            req.body.nombre,
           administrador:     req.body.administrador,
           n_mesas:           req.body.n_mesas,
-          usuarioId:         req.body.usuarioId,
+          usuario_id:         req.body.usuario_id,
           updated_at:        moment(new Date()).utcOffset("-05:00").format("YYYY-MM-DD hh:mm:ss"),
 				},
 				{ 
